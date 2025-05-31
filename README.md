@@ -1,4 +1,4 @@
-# Conversor de Moneda en Java 💱
+# CONVEX: Conversor de Moneda en Java 💱
 
 Este proyecto es una aplicación desarrollada en **Java** que permite realizar **conversiones de moneda** en tiempo real mediante el consumo de una API externa de tasas de cambio.
 
