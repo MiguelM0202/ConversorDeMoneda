@@ -1,3 +1,2 @@
-public record ConversorAPI(String base_code,
-                           String time_last_update_utc) {
+public record ConversorAPI(Conversion_rates conversion_rates) {
 }

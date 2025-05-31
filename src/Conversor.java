@@ -5,14 +5,17 @@ public class Conversor {
         Scanner lectura = new Scanner(System.in);
         ConsultarTasaCambio conversor = new ConsultarTasaCambio();
         System.out.println("""
-                 ____   _____   _   _  __    __ __    __
-                | ___| | | | | |  \\| | \\ \\  / / \\ \\  / / CONVERSOR
-                | |__  | |_| | |     |  \\ \\/ /   > >< <     DE
-                \\____| |_____| |_|\\__|   \\__/   /_/  \\_\\  MONEDA
+                 ____   _____   _   _  __    __  ____  __    __
+                | ___| |  _  | |  \\| | \\ \\  / / | ___| \\ \\  / / CONVERSOR
+                | |__  | |_| | |     |  \\ \\/ /  | ___|  > >< <     DE
+                \\____| |_____| |_|\\__|   \\__/   |____| /_/  \\_\\  MONEDA
                 """);
         System.out.println("Ingresa la moneda");
         var moneda = lectura.nextLine();
         ConversorAPI consulta = conversor.codigoBase(String.valueOf(moneda));
-        System.out.println(consulta);
+        System.out.println("El valor del "
+                + moneda +
+                " en pesos colombianos es: "
+                +consulta.conversion_rates().COP());
     }
 }
